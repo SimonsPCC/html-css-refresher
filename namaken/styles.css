@@ -1,0 +1,81 @@
+* {
+	font-family: "Roboto", sans-serif;
+	margin-top: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+
+
+
+.carlabox {
+  display: grid;
+  box-sizing: border-box;
+
+	height: 250px;
+  width: 500px;
+  grid-template-columns:  25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+ 
+
+	background-color: white;
+
+	border: darkgrey solid 3px;
+  border-radius: 15px;
+  padding: 15px;
+	margin: 0;
+}
+
+.head
+{ grid-column-start: 1;
+grid-column-end: 4;}
+
+.sub {
+  grid-area: 2 / 1 / 2 / 4;
+	color: rgb(161, 161, 161);
+	font-weight: lighter;
+  padding-bottom: 20px;
+  }
+.ava { grid-column: 4;
+margin-left: 30px;}
+ 
+.art { grid-area: 3 / 1 / 3 / 4; 
+font-weight: lighter;
+font-size: 1.10em;}
+
+  .button {grid-area: 5 / 1 / 5 / 3;
+  color: rgb(0, 191, 44);
+border: rgb(0, 191, 44) 3px solid;
+background-color: white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bold;
+font-size: 1.3em;
+height: 50px;
+border-bottom-left-radius: 7px;
+border-top-left-radius: 7px;}
+  
+.button2 {grid-area: 5 / 3 / 5 / 5;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: red;
+  border: red solid 3px;
+  height: 50px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;}
+
+
+.wrap { display: flex;
+  max-width: 1200px;
+  height: 300px;
+  background-color: white;
+  justify-content: center;
+  padding-top: 20px;
+  margin: auto;
+
+}
+.wrap > div {margin: 10px;}
